@@ -9,6 +9,9 @@ const { CLIENT_ID } = process.env;
 const { REDIRECT_URI } = process.env;
 
 import * as AuthSession from 'expo-auth-session';
+import * as AppleAuthentication from 'expo-apple-authentication';
+
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 interface AuthProviderProps {
   children: ReactNode;
@@ -24,6 +27,7 @@ interface User {
 interface IAuthContextData {
   user: User;
   signInWithGoogle(): Promise<void>;
+  signInWithApple(): Promise<void>;
 
 }
 
@@ -53,22 +57,46 @@ function AuthProvider({ children }: AuthProviderProps) {
         const response = await fetch(`https://www.googleapis.com/oauth2/v1/userinfo?alt=json&access_token=${params.access_token}`);
         const userInfo = await response.json();
 
-        setUser({
+        const userLogged = {
           id: userInfo.id,
           email: userInfo.email,
           name: userInfo.given_name,
-          photo: userInfo.picture,
-        });
+          photo: userInfo.picture
+        };
+
+        setUser(userLogged);
+        await AsyncStorage.setItem('@gofinances:user', JSON.stringify(userLogged));
       }
-
-
-      //console.log(response);
-
-
     } catch (error) {
-      console.log(error);
       //throw new Error(error);
+      console.log(error);
 
+    }
+  }
+
+  async function signInWithApple() {
+    try {
+      const credential = await AppleAuthentication.signInAsync({
+        requestedScopes: [
+          AppleAuthentication.AppleAuthenticationScope.FULL_NAME,
+          AppleAuthentication.AppleAuthenticationScope.EMAIL,
+        ]
+      });
+
+      if (credential) {
+        const userLogged = {
+          id: String(credential.user),
+          email: credential.email!,
+          name: credential.fullName!.givenName!,
+          photo: undefined
+        };
+
+        setUser(userLogged);
+        await AsyncStorage.setItem('@gofinances:user', JSON.stringify(userLogged));
+      }
+    } catch (error) {
+      //throw new Error(error);
+      console.log(error);
     }
   }
 
@@ -77,7 +105,9 @@ function AuthProvider({ children }: AuthProviderProps) {
 
     <AuthContext.Provider value={{
       user,
-      signInWithGoogle
+      signInWithGoogle,
+      signInWithApple
+
     }}>
       {children}
     </AuthContext.Provider>
@@ -92,7 +122,11 @@ function useAuth() {
 
 export { AuthProvider, useAuth }
 
-// links uteis => 
+
+function userStorageKey(userStorageKey: any, arg1: string) {
+  throw new Error('Function not implemented.');
+}
+// links uteis =>
 // https://developers.google.com/identity/protocols/oauth2/javascript-implicit-flow
 // https://console.cloud.google.com/apis/credentials?project=gofinances-323521
 // https://docs.expo.dev/guides/authentication/
