@@ -1,8 +1,8 @@
 module.exports = function (api) {
   api.cache(true);
   return {
+    plugins: [" inline-dotenv "],
     presets: ['babel-preset-expo'],
-    plugins: ['react-native-reanimated/plugin'],
-    plugins: [" inline-dotenv "]
+    plugins: ['react-native-reanimated/plugin']
   };
 };

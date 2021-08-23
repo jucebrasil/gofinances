@@ -1,17 +1,18 @@
-import React from "react";
-import { Platform } from "react-native";
+import React from 'react';
+import { Platform } from 'react-native';
 import { MaterialIcons } from '@expo/vector-icons';
 import { useTheme } from 'styled-components';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
-import { Dashboard } from "../screens/Dashboard";
-import { Register } from "../screens/Register";
-import { Resume } from "../screens/Resume";
+import { Dashboard } from '../screens/Dashboard';
+import { Register } from '../screens/Register';
+import { Resume } from '../screens/Resume';
 
 const { Navigator, Screen } = createBottomTabNavigator();
 
 export function AppRoutes() {
   const theme = useTheme();
+
   return (
     <Navigator
       tabBarOptions={{
@@ -19,7 +20,7 @@ export function AppRoutes() {
         inactiveTintColor: theme.colors.text,
         labelPosition: 'beside-icon',
         style: {
-          padding: Platform.OS === 'ios' ? 20 : 0,
+          paddingVertical: Platform.OS === 'ios' ? 20 : 0,
           height: 88
         }
       }}
@@ -37,6 +38,7 @@ export function AppRoutes() {
           ))
         }}
       />
+
       <Screen
         name="Cadastrar"
         component={Register}
@@ -50,6 +52,7 @@ export function AppRoutes() {
           ))
         }}
       />
+
       <Screen
         name="Resumo"
         component={Resume}
