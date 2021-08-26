@@ -45,12 +45,14 @@ export function SignIn() {
     } catch (error) {
       console.log(error);
       Alert.alert('Não foi possível conectar a conta Apple');
+    } finally {
+      setIsLoading(false);
     }
   }
 
   return (
     <Container>
-      <Header>
+      <Header >
         <TitleWrapper>
           <LogoSvg
             width={RFValue(120)}
@@ -73,14 +75,15 @@ export function SignIn() {
       <Footer>
         <FooterWrapper>
 
+
+          <SignInSocialButton
+            title="Entrar com Google"
+            svg={GoogleSvg}
+            onPress={handleSignInWithGoogle}
+          />
           {
             Platform.OS === 'ios' &&
             <>
-              <SignInSocialButton
-                title="Entrar com Google"
-                svg={GoogleSvg}
-                onPress={handleSignInWithGoogle}
-              />
               <SignInSocialButton
                 title="Entrar com Apple"
                 svg={AppleSvg}
@@ -88,6 +91,7 @@ export function SignIn() {
               />
             </>
           }
+
         </FooterWrapper>
 
         {isLoading &&

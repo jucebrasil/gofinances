@@ -112,7 +112,7 @@ function AuthProvider({ children }: AuthProviderProps) {
     await AsyncStorage.removeItem(userStorageKey);
   }
 
-  
+
 
   useEffect(() => {
     async function loadUserStorageDate() {
