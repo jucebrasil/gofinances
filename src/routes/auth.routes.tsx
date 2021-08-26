@@ -7,7 +7,7 @@ const { Navigator, Screen } = createStackNavigator();
 
 export function AuthRoutes() {
   return (
-    <Navigator headerMode="none">
+    <Navigator>
       <Screen
         name="SignIn"
         component={SignIn}
@@ -15,3 +15,5 @@ export function AuthRoutes() {
     </Navigator>
   )
 }
+
+/* Rota Pública */

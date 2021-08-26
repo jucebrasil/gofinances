@@ -8,6 +8,7 @@ import { useTheme } from 'styled-components';
 import { HighlightCard } from '../../components/HighlightCard';
 import { TransactionCard, TransactionCardProps } from '../../components/TransactionCard';
 
+import { useAuth } from '../../hooks/auth';
 
 import {
   Container,
@@ -48,6 +49,9 @@ export function Dashboard() {
   const [highlightData, setHighlightData] = useState<HighlightData>({} as HighlightData);
 
   const theme = useTheme();
+
+  const { signOut, user } = useAuth();
+
 
   function getLastTransactionDate(
     collection: DataListProps[],
@@ -166,17 +170,18 @@ export function Dashboard() {
               <UserWrapper>
                 <UserInfo>
                   <Photo
-                    source={{ uri: 'https://avatars.githubusercontent.com/u/51772068?v=4' }}
+                    source={{ uri: user.photo }}
                   //para criar a uri colocar no final a extensão .png 
                   //=> desta forma: https://github.com/jucebrasil.png
+                  //'https://avatars.githubusercontent.com/u/51772068?v=4'
                   />
                   <User>
                     <UserGreeting>Olá,</UserGreeting>
-                    <UserName>Juce Brasil</UserName>
+                    <UserName>J{user.name}</UserName>
                   </User>
                 </UserInfo>
 
-                <LogoutButton onPress={() => { }}>
+                <LogoutButton onPress={signOut}>
                   <Icon name="power" />
                 </LogoutButton>
               </UserWrapper>
