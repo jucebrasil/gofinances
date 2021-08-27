@@ -119,7 +119,7 @@ export function Dashboard() {
 
     const totalInterval = lastTransactionExpensives === 0
       ? 'Não há transações'
-      : `01 a ${lastTransactionExpensives}`,
+      : `01 a ${lastTransactionExpensives}`
 
     const total = entriesTotal - expensiveTotal;
 
