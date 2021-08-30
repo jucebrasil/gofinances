@@ -34,15 +34,15 @@ interface IAuthContextData {
 
 interface AuthorizationResponse {
   params: {
-    access_token: string;
+    accessToken: string;
   };
   type: string;
 }
 
-const AuthContext = createContext({} as IAuthContextData);
+const AuthContext = createContext({ } as IAuthContextData);
 
 function AuthProvider({ children }: AuthProviderProps) {
-  const [user, setUser] = useState<User>({} as User);
+  const [user, setUser] = useState<User>({ } as User);
   const [userStorageLoading, setUserStorageLoading] = useState(true);
 
   const userStorageKey = '@gofinances:user';
@@ -50,6 +50,8 @@ function AuthProvider({ children }: AuthProviderProps) {
 
   async function signInWithGoogle() {
     try {
+      const CLIENT_ID = '682730717547-k6k318p6mogis6lpct9ai45opvkdlk5q.apps.googleusercontent.com';
+      const REDIRECT_URI = 'https://auth.expo.io/@jucebrasil/gofinances';
       const RESPONSE_TYPE = 'token';
       const SCOPE = encodeURI('profile email');
 
@@ -59,7 +61,7 @@ function AuthProvider({ children }: AuthProviderProps) {
         .startAsync({ authUrl }) as AuthorizationResponse;
 
       if (type === 'success') {
-        const response = await fetch(`https://www.googleapis.com/oauth2/v1/userinfo?alt=json&access_token=${params.access_token}`);
+        const response = await fetch(`https://www.googleapis.com/oauth2/v3/userinfo?alt=json&access_token=${params.accessToken}`);
         const userInfo = await response.json();
 
         const userLogged = {
@@ -108,7 +110,7 @@ function AuthProvider({ children }: AuthProviderProps) {
   }
 
   async function signOut() {
-    setUser({} as User);
+    setUser({ } as User);
     await AsyncStorage.removeItem(userStorageKey);
   }
 
