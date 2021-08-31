@@ -11,11 +11,11 @@ export function Routes() {
   const { user } = useAuth();
 
   console.log(user);
-  
+
 
   return (
     <NavigationContainer>
-      {user.id ? <AppRoutes /> : <AuthRoutes />}
+      {user ? <AppRoutes /> : <AuthRoutes />}
     </NavigationContainer>
   );
 }
