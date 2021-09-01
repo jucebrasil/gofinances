@@ -34,7 +34,7 @@ interface IAuthContextData {
 
 interface AuthorizationResponse {
   params: {
-    accessToken: string;
+    access_token: string;
   };
   type: string;
 }
@@ -62,7 +62,7 @@ function AuthProvider({ children }: AuthProviderProps) {
         .startAsync({ authUrl }) as AuthorizationResponse;
 
       if (type === 'success') {
-        const response = await fetch(`https://www.googleapis.com/oauth2/v1/userinfo?alt=json&access_token=${params.accessToken}`);
+        const response = await fetch(`https://www.googleapis.com/oauth2/v1/userinfo?alt=json&access_token=${params.access_token}`);
         const userInfo = await response.json();
 
         const userLogged = {
