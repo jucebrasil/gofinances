@@ -183,9 +183,7 @@ export function Dashboard() {
                 <UserInfo>
                   <Photo
                     source={{ uri: user.photo }}
-                  //para criar a uri colocar no final a extensão .png 
-                  //=> desta forma: https://github.com/jucebrasil.png
-                  //'https://avatars.githubusercontent.com/u/51772068?v=4'
+                  
                   />
                   <User>
                     <UserGreeting>Olá,</UserGreeting>
