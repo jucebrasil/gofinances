@@ -97,7 +97,7 @@ export function SignIn() {
         {isLoading &&
           <ActivityIndicator
             color={theme.colors.shape}
-            style={{ marginTop: 18 }}
+            style={{ marginTop: 10 }}
           />
         }
       </Footer>

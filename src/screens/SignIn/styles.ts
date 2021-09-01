@@ -45,4 +45,3 @@ export const FooterWrapper = styled.View`
   padding: 0 32px;
   justify-content: space-between;
 `;
-
