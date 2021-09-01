@@ -118,8 +118,8 @@ function AuthProvider({ children }: AuthProviderProps) {
 
 
   useEffect(() => {
-    async function loadUserStorageDate() {
-      const userStoraged = await AsyncStorage.getItem('@gofinances:user');
+    async function loadUserStorageDate(): Promise<void> {
+      const userStoraged = await AsyncStorage.getItem(userStorageKey);
 
       if (userStoraged) {
         const userLogged = JSON.parse(userStoraged) as User;
