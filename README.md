@@ -58,7 +58,7 @@ Ferramentas Utilizadas
   1. Visual Studio Code
   2. Android versão 4.2.1
   
-  ### 🛠 Tecnologias
+### 🛠 Tecnologias
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
@@ -69,7 +69,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [TypeScript](https://www.typescriptlang.org/)
   
 ### Dev em construção
------------------
+--------------
 
 <a href="https://www.linkedin.com/in/jucebrasil/">
  <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/51772068?v=4" width="100px;" alt=""/>
