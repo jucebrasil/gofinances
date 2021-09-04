@@ -56,3 +56,13 @@ Ferramentas Utilizadas
 
   1. Visual Studio Code
   2. Android versão 4.2.1
+  
+  ### 🛠 Tecnologias
+
+As seguintes ferramentas foram usadas na construção do projeto:
+
+- [Expo](https://expo.io/)
+- [Node.js](https://nodejs.org/en/)
+- [React](https://pt-br.reactjs.org/)
+- [React Native](https://reactnative.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
