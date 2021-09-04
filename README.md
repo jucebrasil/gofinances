@@ -27,7 +27,4 @@ Ferramentas Utilizadas
       * Foi utilizado Pixel 2 | 4 com play store
       * No navegador, após executar no terminal o comando expo start, 
       será executado o metro bundle, clique no link **Run on Android device/emulator**
-  4. Terminal
-  
-   
-
+ 
