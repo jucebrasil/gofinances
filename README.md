@@ -11,7 +11,7 @@
   </a>
 
 <h4 align="center" >
-Curso Rocketseat Trilha React Native Chapter II - Aprendi a construir um app para orçamento pessoal com AsycStorage e login social.
+Curso Rocketseat Trilha React Native Chapter II - Aprendi a construir este app para orçamento pessoal com AsycStorage e login social.
 Ë uma satisfação imensa poder aprender a desenvolver soluções em uma das melhores tecnologias do momento. </h4>
 </h1>
 
