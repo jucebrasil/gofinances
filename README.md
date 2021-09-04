@@ -12,12 +12,13 @@
 
 <h4 align="center" >
 Curso Rocketseat Trilha React Native Chapter II - Aprendi a construir este app para orçamento pessoal com AsycStorage e login social.
-Ë uma satisfação imensa poder aprender a desenvolver soluções em uma das melhores tecnologias do momento. </h4>
+Ë uma satisfação imensa poder aprender a desenvolver soluções em uma das melhores tecnologias do momento. 
 </h1>
 
 <p align="center" >
   <img alt="GitHub top language" src="https://github.com/jucebrasil/gofinances/blob/master/Video-sexta-feira%2C%203%20de%20setembro%20de%202021%201.gif" height="400" width="200">
 
+  </h4>
 
 Requisitos de compilação
 ------------------
@@ -68,7 +69,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [TypeScript](https://www.typescriptlang.org/)
   
 ### Dev em construção
----
+-----------------
 
 <a href="https://www.linkedin.com/in/jucebrasil/">
  <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/51772068?v=4" width="100px;" alt=""/>
