@@ -14,8 +14,8 @@ Executar os comandos:
 Configuração Client
 -----------------
 
-  * Configurar  API oAuth 2.0
-  * Google Credentials
+  1. Configurar  API oAuth 2.0
+  2. Implementar google credentials
    * CLIENT_ID=
    * REDIRECT_URI=
 
