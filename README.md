@@ -67,7 +67,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [React Native](https://reactnative.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
   
-  ### Autor
+  ### Dev em construção
 ---
 
 <a href="https://www.linkedin.com/in/jucebrasil/">
