@@ -78,6 +78,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 Feito com paixão por Juce Brasil 👋🏽 Entre em contato!
 
-[![Linkedin Badge](https://img.shields.io/badge/-Juce-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/jucebrasil/)](https://www.linkedin.com/in/jucebrasil/) 
+[![Linkedin Badge](https://img.shields.io/badge/-JuceBrasil-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/jucebrasil/)](https://www.linkedin.com/in/jucebrasil/) 
 [![Gmail Badge](https://img.shields.io/badge/-jucebrasil.analyst@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:jucebrasil.analyst@gmail.com)](mailto:jucebrasil.analyst@gmail.com)
-[![Behance Badge](https://img.shields.io/badge/-Juce-blue?style=flat-square&logo=Behance&logoColor=white&link=https://www.behance.net/jucebrasildesign)](https://www.behance.net/jucebrasildesign)
+[![Behance Badge](https://img.shields.io/badge/-JuceDesign-blue?style=flat-square&logo=Behance&logoColor=white&link=https://www.behance.net/jucebrasildesign)](https://www.behance.net/jucebrasildesign)
