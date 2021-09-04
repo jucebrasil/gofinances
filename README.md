@@ -19,3 +19,15 @@ Configuração Client
    * CLIENT_ID=
    * REDIRECT_URI=
 
+Ferramentas Utilizadas
+-----------------
+
+  1. Visual Studio Code
+  2. Emulador(Android Studio versão 4.2.1)
+      * Foi utilizado Pixel 2 | 4 com play store
+      * No navegador, após executar no terminal o comando expo start, 
+      será executado o metro bundle, clique no link **Run on Android device/emulator**
+  4. Terminal
+  
+   
+
