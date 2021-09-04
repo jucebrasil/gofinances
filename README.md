@@ -18,6 +18,7 @@ Configuração Client
   2. Implementar google credentials
    * CLIENT_ID=
    * REDIRECT_URI=
+   * Login social Google e Apple
 
 Ferramentas Utilizadas
 -----------------
