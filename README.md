@@ -16,7 +16,6 @@ Configuração Client
 
   * Configurar  API oAuth 2.0
   * Google Credentials
-
-CLIENT_ID=
-REDIRECT_URI=
+   * CLIENT_ID=
+   * REDIRECT_URI=
 
