@@ -22,7 +22,7 @@ Curso Rocketseat Trilha React Native Chapter II - Aprendi a construir este app p
 Requisitos de compilação
 ------------------
 
-Para clonar e executar este aplicativo, você precisará do Git, [Node.js v14.17.0] [nodejs] ou superior + [Yarn v1.22.11] [yarn] ou superior instalado em seu computador. Na sua linha de comando:
+Para clonar e executar este aplicativo, você precisará do Git, [Node.js v14.17.0] [nodejs] + [Yarn v1.22.11] [yarn] instalado em seu computador. Na sua linha de comando:
 
 ```bash
 # Clone this repository
