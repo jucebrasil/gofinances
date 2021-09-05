@@ -69,13 +69,13 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [React Native](https://reactnative.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
   
-### Dev em construção
+### Autora e Dev em construção
 --------------
 
-<a href="https://www.linkedin.com/in/jucebrasil/">
+<a href="https://github.com/jucebrasil/">
  <img style="border-radius: 15px" src="https://avatars.githubusercontent.com/u/51772068?v=4" width="100px;" alt=""/>
  <br />
- <sub><b>Juce Brasil</b></sub></a> <a href="https://www.linkedin.com/in/jucebrasil/" title="Rocketseat">🚀</a>
+ <sub><b>Juce Brasil</b></sub></a> <a href="https://github.com/jucebrasil/" font-size="16px">🚀</a>
 
 
 Feito com paixão por Juce Brasil 👋🏽 Entre em contato!
