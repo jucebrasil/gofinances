@@ -19,6 +19,7 @@ Curso Rocketseat Trilha React Native Chapter II - Aprendi a construir este app p
   <img alt="GitHub top language" src="https://github.com/jucebrasil/gofinances/blob/master/Video-sexta-feira%2C%203%20de%20setembro%20de%202021%201.gif" height="400" width="200">
 
   </h4>
+  <hr>
 
 Requisitos de compilação
 ------------------
@@ -72,13 +73,19 @@ As seguintes ferramentas foram usadas na construção do projeto:
 --------------
 
 <a href="https://www.linkedin.com/in/jucebrasil/">
- <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/51772068?v=4" width="100px;" alt=""/>
+ <img style="border-radius: 15px" src="https://avatars.githubusercontent.com/u/51772068?v=4" width="100px;" alt=""/>
  <br />
  <sub><b>Juce Brasil</b></sub></a> <a href="https://www.linkedin.com/in/jucebrasil/" title="Rocketseat">🚀</a>
 
 
 Feito com paixão por Juce Brasil 👋🏽 Entre em contato!
 
-[![Linkedin Badge](https://img.shields.io/badge/-JuceBrasil-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/jucebrasil/)](https://www.linkedin.com/in/jucebrasil/) 
-[![Gmail Badge](https://img.shields.io/badge/-jucebrasil.analyst@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:jucebrasil.analyst@gmail.com)](mailto:jucebrasil.analyst@gmail.com)
-[![Behance Badge](https://img.shields.io/badge/-JuceDesign-blue?style=flat-square&logo=Behance&logoColor=white&link=https://www.behance.net/jucebrasildesign)](https://www.behance.net/jucebrasildesign)
+<p align="center">
+
+<a href="https://www.linkedin.com/in/jucebrasil/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Juce%20Brasil-blue?style=flat-square&logo=linkedin"></a>
+
+<a href="https://www.behance.net/jucebrasildesign/"><img alt="Behance" src="https://img.shields.io/badge/Behance-Juce%20Brasil%20Design-blue?style=flat-square&logo=behance"></a>
+
+<a href="mailto:jucebrasil.analyst@gmail.com"><img alt="Email" src="https://img.shields.io/badge/Email-jucebrasil.analyst@gmail.com-blue?style=flat-square&logo=gmail"></a>
+
+</p>
