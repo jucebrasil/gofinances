@@ -105,7 +105,7 @@ function AuthProvider({ children }: AuthProviderProps) {
         await AsyncStorage.setItem(userStorageKey, JSON.stringify(userLogged));
       }
     } catch (error) {
-      throw new Error('Error');
+      throw new Error('Error'); // inseri aspas
 
     }
   }
